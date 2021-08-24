@@ -1,0 +1,26 @@
+//Main Style Import
+@import '../../styles.scss';
+// Footer Component Style
+.footer-section {
+  padding-top: 44px;
+  padding-bottom: 30px;
+  background: #e6eaef;
+}
+.footer-details {
+  font-size: 1em;
+  line-height: 2;
+}
+
+.navbar-nav .nav-item .nav-link {
+  color: $black;
+  text-decoration: none;
+  padding: 0;
+  margin-bottom: 14px;
+}
+.text-primary {
+  color: $primary!important;
+}
+.hover-link:hover{
+  color: #007476 !important;
+}
+

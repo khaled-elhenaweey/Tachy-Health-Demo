@@ -1,0 +1,33 @@
+
+//Scroll Style
+
+/* width */
+
+::-webkit-scrollbar {
+  width: 5px;
+  border-radius: 2px;
+}
+
+/* Track */
+
+::-webkit-scrollbar-track {
+  background: $main-back-ground;
+}
+
+
+/* Handle */
+
+::-webkit-scrollbar-thumb {
+  background: $primary;
+}
+
+
+/* Handle on hover */
+
+::-webkit-scrollbar-thumb:hover {
+  background: $primary;
+}
+
+::-webkit-scrollbar-corner {
+  background: $primary;
+}

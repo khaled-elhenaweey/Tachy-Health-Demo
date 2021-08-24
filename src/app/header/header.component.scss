@@ -1,0 +1,81 @@
+//Main Style Import
+@import '../../styles.scss';
+// Header Component Style
+
+.img-logo{
+  width: 120px;
+}
+//  Space Between <Li> Items
+.nav-item{
+  margin-right: 14px;
+}
+// Regular link Color
+
+.navbar-light .navbar-nav .nav-link {
+  font-weight: 400;
+  color: $black;
+}
+// Active link Color
+.navbar-light .navbar-nav .active>.nav-link,
+.navbar-light .navbar-nav .nav-link.active,
+.navbar-light .navbar-nav .nav-link.show,
+.navbar-light .navbar-nav .show>.nav-link {
+  color: $primary;
+}
+// DropDown item Background On Hover
+
+.dropdown-item:focus, .dropdown-item:hover {
+  color: $black;
+  text-decoration: none;
+  background-color: darken($color: $main-back-ground, $amount: 1%);
+}
+// DropDown item Background On Active
+
+.dropdown-item.active, .dropdown-item:active {
+  color: $white;
+  text-decoration: none;
+  background-color: $primary;
+}
+// Toggler btn Styling
+
+.navbar-light .navbar-toggler {
+  color: $black;
+  border-color: rgba(0,0,0,0);
+}
+.navbar-toggler {
+  padding: .25rem .75rem;
+  font-size: 1rem;
+  font-weight: 700;
+  line-height: 1;
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: .25rem;
+  color: $black;
+
+}
+// Toggler SVG  Styling Color
+
+.navbar-light .navbar-toggler-icon {
+  background-image: url("data:image/svg+xml,%3csvg xmlns='http://www.w3.org/2000/svg' width='30' height='30' viewBox='0 0 30 30'%3e%3cpath stroke='rgba%280, 0, 0, 51' stroke-linecap='round' stroke-miterlimit='15' stroke-width='2' d='M4 7h22M4 15h22M4 23h22'/%3e%3c/svg%3e");
+}
+// Media Query Screen Size
+
+// Large Screen Styling
+@media (min-width: 992px){
+.navbar-expand-lg .navbar-collapse {
+    display: flex!important;
+    flex-basis: auto;
+    flex-direction: row;
+    justify-content: center;
+}
+}
+// Small and Medium Screen Styling
+
+@media screen and (max-width: 991px){
+.navbar-nav {
+  display: flex!important;
+  flex-basis: auto;
+  flex-direction: column;
+  justify-content: start;
+}
+}

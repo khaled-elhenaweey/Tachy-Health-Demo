@@ -1,0 +1,34 @@
+<section class="our-products mt-5 mb-5">
+  <!-- Nav tab  Container Start -->
+  <div class="container ">
+    <div class="row mb-4">
+      <!-- Nav tab  Title Start -->
+      <h2 class="section-title">Our Products</h2>
+      <!-- Nav tab Title End -->
+    </div>
+    <!-- Nav tab  Products Start -->
+    <div class="row section-tab-nav">
+      <ul class="nav nav-tabs">
+        <li class="nav-item">
+          <a class="nav-link " routerLink="/Home/AiGuideTab" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">AiGuide</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Home/AiCodeTab" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">AiCode</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Home/AiClaimTab" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">AiClaim</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" routerLink="/Home/AiReviewTab" routerLinkActive="active"
+            [routerLinkActiveOptions]="{exact: true}">AiReview</a>
+        </li>
+      </ul>
+    </div>
+    <!-- Nav tab  Products End -->
+  </div>
+  <!-- Nav tab Container End -->
+</section>
+<app-product-tab></app-product-tab>

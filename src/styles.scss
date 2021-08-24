@@ -1,0 +1,11 @@
+/* You can add global styles to this file, and also import other style files */
+@import './app/scss/fonts';
+@import './app/scss/color-palette';
+@import './app/scss/scroll';
+
+body{
+  font-family: "Ubuntu-Regular";
+  background-color: $main-back-ground;
+}
+
+

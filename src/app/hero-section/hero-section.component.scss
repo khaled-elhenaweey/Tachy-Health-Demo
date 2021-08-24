@@ -1,0 +1,168 @@
+//Main Style Import
+@import '../../styles.scss';
+// Hero Component Style
+// Hero Background image and Background Color
+.hero-section{
+    background-color: $primary;
+    background-image: url(../../assets/svg//banner-vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0 bottom 0;
+    padding-left: 50px;
+    padding-right: 30px;
+    padding-top: 90px;
+    padding-bottom: 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+// Hero Title Style
+
+.hero-title{
+
+  color: $white;
+  font-size: 2.6em;
+  font-weight: 600;
+  line-height: 1.4;
+  margin-bottom: 15px;
+}
+// Hero Paragraph Style
+
+.hero-details{
+  color: $white;
+  font-size: 1.1em;
+  font-weight: 400;
+  line-height: 1.6;
+
+}
+// Hero btn Style
+
+.hero-btn{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  margin-top: 25px;
+}
+.hero-booking{
+  color: $white;
+  background-color: transparent;
+  border: 2px solid $white;
+  text-decoration: none;
+  cursor: pointer;
+  margin-top: 15px;
+}
+.hero-demo{
+  color: $primary;
+  background-color: $white;
+  border-color: $white;
+  text-decoration: none;
+  cursor: pointer;
+}
+.hero-booking, .hero-demo{
+padding: 10px 80px;
+border-radius: 12px;
+font-weight: 600;
+}
+
+//Media Query Medium Screen
+@media screen and (max-width: 991px){
+  .hero-section{
+    background-color: $primary;
+    background-image: url(../../assets/svg//banner-vector.svg);
+    background-repeat: no-repeat;
+    background-size: contain;
+    background-position: right 0 bottom 0;
+    padding-left: 20px;
+    padding-right: 30px;
+    padding-top: 70px;
+    padding-bottom: 40px;
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: center;
+    align-items: center;
+}
+.hero-img{
+  width: 500px;
+}
+
+.hero-title{
+
+  color: $white;
+  font-size: 2.2em;
+
+}
+.hero-details{
+  color: $white;
+  font-size: 1.2em;
+}
+.hero-btn{
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  margin-top: 25px;
+}
+
+.hero-booking{
+    margin-top: 0px;
+    margin-left: 15px;
+}
+.hero-booking, .hero-demo{
+  padding: 10px 40px;
+  border-radius: 12px;
+  font-weight: 600;
+  }
+}
+//Media Query Small Screen
+
+@media screen and (max-width: 540px){
+    .hero-section{
+      background-color: $primary;
+      background-image: url(../../assets/svg//banner-vector.svg);
+      background-repeat: no-repeat;
+      background-size: cover;
+      background-position: initial;
+      padding-left: 20px;
+      padding-right: 30px;
+      padding-top: 60px;
+      padding-bottom: 40px;
+      display: flex;
+      flex-direction: column-reverse;
+      justify-content: center;
+      align-items: center;
+  }
+    .hero-img{
+      width: 300px;
+    }
+
+.hero-title{
+
+  color: $white;
+  font-size: 1.8em;
+
+}
+.hero-details{
+  color: $white;
+  font-size: 1em;
+}
+    .hero-btn{
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      margin-top: 20px;
+    }
+
+    .hero-booking{
+        margin-top: 10px;
+        margin-left: 0;
+    }
+    .hero-booking, .hero-demo{
+      text-align: center;
+      width: 100%;
+      padding: 10px 40px;
+      border-radius: 12px;
+      font-weight: 600;
+      }
+}

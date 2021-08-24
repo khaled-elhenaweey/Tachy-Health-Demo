@@ -1,0 +1,69 @@
+//Main Style Import
+@import '../../styles.scss';
+// Request Demo Component Style
+.req-demo {
+  background: url(../../assets/svg/banner-draw.svg);
+  background-position: center center;
+  background-size: cover;
+  padding: 65px 25px;
+}
+.req-demo .demo-container {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+  overflow-y: hidden;
+}
+.req-demo .demo-container .demo-title {
+  font-size: 1.9em;
+  font-weight: 600;
+  color: $white;
+  margin-bottom: 24px;
+}
+.req-demo .demo-container .demo-info {
+  font-size: 18px;
+  margin-bottom: 0;
+  color: $white;
+}
+.req-demo .demo-container .demo-btn .btn.btn-white {
+  border: 2px solid $white!important;
+  color: $primary;
+  background-color: $white;
+  font-weight: 600;
+  border-radius: 16px!important;
+  margin-right: 20px;
+  padding: 10px 25px;
+}
+.req-demo .demo-container .demo-btn .btn.btn-outline-white {
+  border: 2px solid $white!important;
+  color: $white;
+  font-weight: 600;
+  border-radius: 16px!important;
+  padding: 10px 25px;
+}
+.req-demo .demo-container .demo-btn {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+.req-demo .demo-container {
+  max-width: 700px;
+  text-align: center;
+  margin: auto;
+}
+// media query small screen
+@media screen and (max-width: 540px){
+  .req-demo .demo-container .demo-btn .btn {
+    margin-right: 0;
+    margin-bottom: 16px;
+}
+.req-demo .demo-container .demo-btn {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: 50px;
+}
+.req-demo .demo-container .demo-btn .btn.btn-white {
+
+  margin-right: 0px;
+}
+}
